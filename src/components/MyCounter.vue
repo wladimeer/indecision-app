@@ -7,23 +7,21 @@
     </div>
 
     <div class="flex gap-1">
-      <button class="btn btn-blue" @click="counter++">+1</button>
-      <button class="btn btn-red" @click="counter--">-1</button>
+      <button class="btn btn-blue" @click="increaseCounter">+1</button>
+      <button class="btn btn-red" @click="decreaseCounter">-1</button>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { useCounter } from '@/composables/useCounter'
 
 interface Props {
   counterValue: number
 }
 
 const { counterValue } = defineProps<Props>()
-
-const counter = ref(counterValue)
-const square = computed(() => counter.value * counter.value)
+const { counter, square, increaseCounter, decreaseCounter } = useCounter(counterValue)
 </script>
 
 <style scoped>
