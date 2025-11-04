@@ -8,6 +8,8 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "test": "vitest",
+    "test:once": "vitest --watch=false",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
@@ -34,6 +36,7 @@
     "typescript": "^5.8.3",
     "vite": "^6.1.0",
     "vite-plugin-vue-devtools": "^7.7.2",
+    "vitest": "^3.2.4",
     "vue-tsc": "^2.2.2"
   }
 }
