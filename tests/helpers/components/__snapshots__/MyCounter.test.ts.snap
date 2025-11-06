@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyCounter > should match snapshot 1`] = `
+"<section data-v-0352012b="" class="w-72 bg-amber-50 flex flex-col justify-center p-2">
+  <div data-v-0352012b="" class="flex gap-3 justify-center mb-2">
+    <h3 data-v-0352012b="" data-testid="counter">Counter: 0</h3> - <h3 data-v-0352012b="" data-testid="square">Square: 0</h3>
+  </div>
+  <div data-v-0352012b="" class="flex gap-1"><button data-v-0352012b="" class="btn btn-blue">+1</button><button data-v-0352012b="" class="btn btn-red">-1</button></div>
+</section>"
+`;

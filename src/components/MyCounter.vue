@@ -1,9 +1,9 @@
 <template>
   <section class="w-72 bg-amber-50 flex flex-col justify-center p-2">
     <div class="flex gap-3 justify-center mb-2">
-      <h3>Counter: {{ counter }}</h3>
+      <h3 data-testid="counter">Counter: {{ counter }}</h3>
       -
-      <h3>Square: {{ square }}</h3>
+      <h3 data-testid="square">Square: {{ square }}</h3>
     </div>
 
     <div class="flex gap-1">
