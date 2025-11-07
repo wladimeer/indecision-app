@@ -7,8 +7,8 @@
     </div>
 
     <div class="flex gap-1">
-      <button class="btn btn-blue" @click="increaseCounter">+1</button>
-      <button class="btn btn-red" @click="decreaseCounter">-1</button>
+      <button data-testid="btn-increase" class="btn btn-blue" @click="increaseCounter">+1</button>
+      <button data-testid="btn-decrease" class="btn btn-red" @click="decreaseCounter">-1</button>
     </div>
   </section>
 </template>
